@@ -22,8 +22,8 @@ Output: [0,1]
 
 Constraints:
     2 <= nums.length <= 10^4
-    -109 <= nums[i] <= 10^9
-    -109 <= target <= 10^9
+    -10^9 <= nums[i] <= 10^9
+    -10^9 <= target <= 10^9
     Only one valid answer exists.
 
 
@@ -35,7 +35,7 @@ https://dev.to/xshirl/two-sum-leetcode-3afp
 from typing import List
 
 
-class Solution:
+class Solution11:
 
     # O(n^2) time, O(1) space
     # Use two pointers(for loops) to loop through the array and find the indices of the two numbers
@@ -62,6 +62,6 @@ class Solution:
                 nums_map[nums[i]] = i
 
 
-solution = Solution()
+solution = Solution11()
 print(solution.two_Sum_brute([1, 3, 5, 7, 2], 9))
 print(solution.two_sum_hash([1, 3, 5, 7, 2], 9))
