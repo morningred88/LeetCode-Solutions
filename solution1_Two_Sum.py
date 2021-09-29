@@ -21,10 +21,9 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 
 Constraints:
-
-    2 <= nums.length <= 104
-    -109 <= nums[i] <= 109
-    -109 <= target <= 109
+    2 <= nums.length <= 10^4
+    -109 <= nums[i] <= 10^9
+    -109 <= target <= 10^9
     Only one valid answer exists.
 
 
@@ -48,6 +47,10 @@ class Solution:
                 if nums[j] == number_to_find:
                     return [i, j]
 
+    # O(n) time, O(n) space
+    # Using hash table to store the numbers as key and indices as value.
+    # Then check if the number to find is in the hashtable
+    # If the number to find is in hashtable, then return both the index of the number and number to find
     def two_sum_hash(self, nums: List[int], target: int) -> List[int]:
 
         nums_map = {}

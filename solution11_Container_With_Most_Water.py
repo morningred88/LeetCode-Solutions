@@ -34,6 +34,7 @@ from typing import List
 
 
 class Solution11:
+    
     def maxArea(self, height: List[int]) -> int:
         l = 0
         r = len(height)-1
